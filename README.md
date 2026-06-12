@@ -14,9 +14,9 @@ n'importe où (GitHub Pages, Netlify, serveur interne…).
 
 ## 1. Installation
 
-1. **Hébergez** le dossier `grist-widgets/notion-gallery/` sur une URL HTTPS.
+1. **Hébergez** ce dépôt sur une URL HTTPS.
    - Le plus simple : activer **GitHub Pages** sur ce dépôt, l'URL sera du type
-     `https://<utilisateur>.github.io/<repo>/grist-widgets/notion-gallery/index.html`.
+     `https://<utilisateur>.github.io/<repo>/index.html`.
    - En local pour tester : `python3 -m http.server` dans le dossier, puis
      utilisez `http://localhost:8000/index.html` (Grist doit pouvoir y accéder).
 2. Dans Grist, ajoutez une vue **« Custom » / « Widget personnalisé »** sur la
@@ -103,7 +103,7 @@ n'importe où (GitHub Pages, Netlify, serveur interne…).
 ## 4. Structure du code
 
 ```
-grist-widgets/notion-gallery/
+.
 ├── index.html   # point d'entrée, charge grist-plugin-api.js + assets
 ├── style.css    # thème clair/sombre + mise en page facon Notion
 ├── widget.js    # toute la logique (rendu, édition, tri/filtre/groupe, DnD)
